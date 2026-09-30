@@ -21,19 +21,88 @@
 
     <main>
       <section>
-        <h3>Onde Me Encontrar</h3>
-        <article>
-          <a
-            href="https://www.linkedin.com/in/fabio-santos-a45723435"
-            target="_blank"
-            >Linkedin
-          </a>
-        </article>
-        <article>
-          <a href="mailto:fabio.a.santos45@aluno.senai.br"
-            >Me mande um e-mail
-          </a>
-        </article>
+        <h3>Fale Comigo</h3>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" minlength="3" required />
+
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" />
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+            <label for="cep">CEP</label>
+            <input
+              type="number"
+              id="cep"
+              name="cep"
+              pattern="[0-9]{8}"
+              placeholder="Somente Números"
+              title="12345678"
+              required
+            />
+
+            <label for="rua">Rua</label>
+            <input type="text" id="rua" name="rua" />
+
+            <label for="numero">Número</label>
+            <input
+              type="number"
+              id="numero"
+              name="numero"
+              min="1"
+              max="99999"
+            />
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" />
+
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+              <option value="">PR</option>
+              <option value="">SP</option>
+              <option value="">SC</option>
+              <option value="">MG</option>
+              <option value="">MS</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Interesse</legend>
+            <label for="areaInteresse">Área de Interesse</label>
+            <select name="areaInteresse" id="areaInteresse" required>
+              <option value="">Front-end</option>
+              <option value="">Back-end</option>
+              <option value="">Banco de Dados</option>
+              <option value="">Full stack</option>
+            </select>
+
+            <label for="nivelXp">Nivel de Experiência</label>
+            <input type="radio" name="nivelXp" id="ini" />
+            <label for="ini">Iniciante</label>
+            <input type="radio" name="nivelXp" id="inter" />
+            <label for="inter">Intermediário</label>
+            <input type="radio" name="nivelXp" id="ava" />
+            <label for="ava">Avançado</label>
+
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" rows="5" maxlength="500"></textarea>
+
+            <input type="checkbox" id="chkbx" required />
+            <label for="chkbx">Li e aceito os termos de uso</label>
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
 

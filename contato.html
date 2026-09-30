@@ -101,6 +101,32 @@
             <label for="chkbx">Li e aceito os termos de uso</label>
           </fieldset>
 
+          <fieldset>
+            <legend>Senha</legend>
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+            />
+
+            <label for="confPassword">Confirmar Senha</label>
+            <input
+              type="password"
+              id="confPassword"
+              name="confPassword"
+              minlength="8"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Nota Para o Curso</legend>
+            <input type="range" id="nota" name="nota" min="0" max="10" />
+          </fieldset>
+
           <button type="submit">Enviar</button>
         </form>
       </section>

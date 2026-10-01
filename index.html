@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Sobre Mim | Fabio Tanaka</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Sobre Mim</a></li>
-          <li><a href="./curriculo.html">Curriculo</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-        </ul>
+      <nav class="nav">
+        <a href="./index.html">Sobre Mim</a>
+        <a href="./curriculo.html"> Curriculo</a>
+        <a href="./contato.html">Contato</a>
       </nav>
 
       <h1>Fabio Augusto Tanaka Santos</h1>
@@ -20,11 +21,13 @@
     </header>
 
     <main>
-      <img src="./img/tanaka.jpg" alt="Foto Fabio e Montanha" width="200" />
+      <div class="pic">
+        <img src="./img/tanaka.jpg" alt="Foto Fabio e Montanha" width="200" />
+      </div>
 
       <section>
         <h3>Sobre Mim</h3>
-        <p>
+        <div class="intro">
           Tenho 28 anos, sou de Londrina (PR), formado em
           <strong>Música</strong> pela UEL e tecnico em
           <strong>Desenvolvimento de Sistemas</strong> pelo Senai. Escolhi a
@@ -32,20 +35,20 @@
           universidade, todos os meus interesses, durante e após o curso, se
           conectavam com a area de tecnologia do áudio. Atualmente tenho grande
           interesse na área de desenvolvimento <em>Back-end</em>.
-        </p>
+        </div>
       </section>
 
       <section>
         <h3>Informações Adicionais</h3>
         <ul>
-          <strong>Hobbies:</strong>
+          <h4><strong>Hobbies:</strong></h4>
           <li>Dormir</li>
           <li>Procrastinar</li>
           <li>Jogar</li>
         </ul>
 
         <ol>
-          <strong>Tecnologias:</strong>
+          <h4><strong>Tecnologias:</strong></h4>
           <li>Angular</li>
           <li>Node</li>
           <li>CSS</li>
@@ -54,29 +57,25 @@
 
       <section>
         <h3>Onde Me Encontrar</h3>
-        <article>
+        <article class="links">
           <a
             href="https://www.linkedin.com/in/fabio-santos-a45723435"
             target="_blank"
             >Linkedin
           </a>
-        </article>
-        <article>
           <a href="mailto:fabio.a.santos45@aluno.senai.br"
             >Me mande um e-mail
           </a>
-        </article>
-        <article>
           <a href="https://www.youtube.com" target="_blank">Youtube </a>
         </article>
       </section>
     </main>
 
     <footer>
-      <p>
+      <div class="foot">
         &copy; 2026 Fabio Tanaka -
         <a href="mailto:fabio.a.santos45@aluno.senai.br">E-mail</a>
-      </p>
+      </div class="foot">
     </footer>
 
     <!-- 13 elementos filhos na tag <body> -->

@@ -16,10 +16,24 @@ header {
 }
 nav a {
   color: #dbdbd4;
+  text-decoration: none;
+  background-color: #051c49;
+  padding: 36px;
 }
+nav a:hover {
+  color: #051c49;
+  text-decoration: none;
+  background-color: #dbdbd4;
+  padding: 46px;
+  padding-bottom: 20px;
+  border-bottom-right-radius: 26px;
+  border-bottom-left-radius: 26px;
+}
+/*
 .nav a:not(:last-child)::after {
   content: " ㅤ||ㅤ ";
 }
+*/
 
 * {
   box-sizing: border-box;
@@ -28,12 +42,35 @@ body {
   margin: 0;
   background-color: #142a5a;
 }
-h3 {
+h2 {
   color: #c4c4bd;
   text-align: center;
 }
+.newSect {
+  margin-top: 60px;
+}
+h3 {
+  margin-top: 50px;
+  color: #c4c4bd;
+  text-align: center;
+}
+.noSpace {
+  margin-top: 0px;
+}
 h4 {
   color: #c4c4bd;
+  text-align: center;
+}
+.lists {
+  text-align: center;
+  padding: 0% auto;
+  margin-right: 40px;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
 }
 li {
   color: #c4c4bd;
@@ -48,32 +85,48 @@ a {
   border-radius: 40px;
   text-align: center;
 }
-.foot {
+table {
+  margin: 0% auto;
   color: #c4c4bd;
+}
+th {
   background-color: #051c49;
-  padding: 24px;
-  border-radius: 40px;
-  text-align: center;
+  padding: 12px;
+}
+td {
+  padding: 12px;
 }
 .links {
   text-align: center;
+  background-color: #142a5a;
+  padding: 20px auto;
 }
-.links a:not(:last-child)::after {
-  content: " ㅤ||ㅤ ";
+article a {
+  color: #dbdbd4;
+  text-decoration: none;
+  padding: 24px;
+  padding-bottom: 20px;
+  background-color: #142a5a;
+}
+article a:hover {
+  color: #142a5a;
+  text-decoration: none;
+  padding: 38px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #dbdbd4;
+  border-radius: 40px;
 }
 
-/*
-ul {
-  background-color: rgb(7, 28, 73);
-  padding: 24px;
-  border-radius: 40px;
-}
-ol {
-  background-color: rgb(7, 28, 73);
-  padding: 24px;
-  border-radius: 40px;
-}
-  */
 legend {
   color: #c4c4bd;
+}
+
+footer {
+  color: #c4c4bd;
+  background-color: #051c49;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 40px;
+  text-align: center;
 }

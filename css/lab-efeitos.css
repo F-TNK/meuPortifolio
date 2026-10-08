@@ -2,4 +2,12 @@
   width: 150px;
   height: 150px;
   background-color: #3498db;
+  transition: transform 1s ease-out;
+}
+.caixa:hover {
+  transform: rotate(10deg);
+}
+
+.botao:active {
+  transform: scale(0.95);
 }
